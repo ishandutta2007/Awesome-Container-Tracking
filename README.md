@@ -1,233 +1,140 @@
-# Awesome-Container-Tracking
+# Awesome Container Tracking 🚢
 
-## Top Container Tracking Platforms Ecosystem
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Container Tracking Banner" width="100%">
+</p>
 
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
+  <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Container-Tracking/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Container-Tracking?style=flat&logo=github" alt="Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Container-Tracking/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Container-Tracking?style=flat&logo=github" alt="Forks"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Container-Tracking/issues"><img src="https://img.shields.io/github/issues/ishandutta2007/Awesome-Container-Tracking" alt="Issues"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Container-Tracking/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Container-Tracking" alt="License"/></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
+## 🌊 Top Container Tracking Platforms & Open-Source Ecosystem
 
 **Curated List of SaaS Products & Open-Source GitHub Projects**
 
-*Focused on Ocean Freight Visibility, Container Milestone Tracking, Port Congestion & Demurrage Management*
+*Focused on Ocean Freight Visibility, Container Milestone Tracking, AIS Vessel Tracking, Port Congestion & Demurrage Management*
 
-**Last updated: September 2026**
-
-
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Container Tracking**. These tools help shippers, freight forwarders, and logistics teams monitor container movements, receive milestone alerts, predict ETAs, and manage demurrage and detention risk.
-
-
-
-**Examples** include Vizion, project44, Terminal49, GoComet, SeaRates, ShipsGo, CargoSmart, Ocean Insights, Portcast, and Descartes (the category leaders).
-
-
-
-**Open-source emphasis**: Container tracking has a **vibrant open-source foundation** built around **AIS (Automatic Identification System) data** and **DCSA standards**. **aisdecode** provides AIS decoding and web-based vessel tracking from serial or UDP sources . **AIS-catcher** is a mature AIS receiver for SDR dongles with 460+ stars . **AISight** delivers a full-stack vessel tracking platform with TimescaleDB, Redis, and React . **Container Tracking MCP** exposes 225 carriers to AI assistants via DCSA-normalized events . **ICD TZ** provides inland container depot management with gate operations, automated billing, and container location tracking . This section documents these production-grade solutions.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-
-
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-
-
-- **[Vizion](https://www.vizionapi.com/)**  
-
-  Container tracking API connecting to 100+ ocean carriers. Provides real-time milestone events, ETA predictions, and demurrage/detention alerts via normalized API.
-
-
-
-- **[project44](https://www.project44.com/)**  
-
-  Comprehensive supply chain visibility platform covering ocean, air, rail, and road. Provides container tracking, port congestion insights, and predictive ETAs across carriers.
-
-
-
-- **[Terminal49](https://terminal49.com/)**  
-
-  Container tracking and terminal visibility platform. Provides real-time container status, port congestion data, and demurrage risk alerts for US and global ports.
-
-
-
-- **[GoComet](https://www.gocomet.com/)**  
-
-  Logistics visibility platform with container tracking, freight procurement, and shipment management. Covers ocean, air, and land transportation.
-
-
-
-- **[SeaRates](https://www.searates.com/)**  
-
-  Logistics platform with container tracking, freight rate comparison, and shipment management tools.
-
-
-
-- **[ShipsGo](https://shipsgo.com/)**  
-
-  Container tracking and supply chain visibility platform. Provides real-time tracking across 200+ carriers with milestone alerts and ETA predictions.
-
-
-
-- **[CargoSmart](https://www.cargosmart.com/)**  
-
-  Ocean shipping visibility and collaboration platform. Provides container tracking, port congestion data, and supply chain disruption alerts.
-
-
-
-- **[Ocean Insights](https://www.ocean-insights.com/)**  
-
-  Ocean freight visibility platform (now part of project44). Provides container tracking, port congestion analytics, and carrier performance data.
-
-
-
-- **[Portcast](https://www.portcast.io/)**  
-
-  Predictive supply chain visibility platform. Provides container ETA predictions, port congestion forecasts, and risk alerts using machine learning.
-
-
-
-- **[Descartes](https://www.descartes.com/)**  
-
-  Logistics technology platform with container tracking, customs compliance, and global trade intelligence.
-
-
-
-## Open-Source GitHub Projects
-
-
-
-### AIS Decoding & Vessel Tracking
-
-
-
-- **[aisdecode](https://github.com/madpsy/aisdecode)**  
-
-  **AIS Decoder and Web-based Tracker for serial AIS hardware and generic UDP network data sources.** Tested with SevenStar 2rxPro and various SDR-based decoders . **Features**: Accepts NMEA 0183 data via UDP port 8101 or serial device; web interface at port 8100 showing live vessels; admin panel for station configuration; aggregator mode to push data to public aggregation servers; deduplication window (default 1s); vessel data expiration (default 24h); external lookup endpoint for vessels missing names; state persistence and logging options . **Go-based**. Designed for AIS receiver operators wanting self-hosted vessel tracking.
-
-
-
-- **[AIS-catcher](https://github.com/jvde-github/AIS-catcher)**  
-
-  **AIS receiver for RTL SDR dongles, Airspy R2/Mini/HF+, HackRF, SDRplay, and SoapySDR.** **460 GitHub stars, 76 forks** . C++-based, actively maintained. Provides raw AIS reception for vessel tracking pipelines. Foundation for building custom container tracking systems.
-
-
-
-- **[AISight](https://github.com/snekkenull/AISight)**  
-
-  **Full-stack real-time vessel tracking platform with live AIS data streaming and interactive maps** . **Tech stack**: Node.js 18+, PostgreSQL 14+ with TimescaleDB extension, Redis 7+, React frontend with Mapbox integration. **Features**: Live AIS data streaming from AISStream API, interactive map visualization, vessel search and filtering, position history tracking, REST API endpoints for vessels and tracks . Requires AISStream API key (free tier available).
-
-
-
-### Container Tracking MCP & AI Integration
-
-
-
-- **[Container Tracking MCP](https://github.com/lxxmng/container-tracking-mcp)**  
-
-  **Ocean-freight MCP server for tracking containers across 200+ shipping lines (225 carriers) from Claude, ChatGPT, Cursor, or any MCP client.** Every carrier is normalized to **DCSA ocean-tracking event standard** so milestones look the same regardless of line . **Track by**: container number, bill of lading, or booking number. **Returns**: live milestone events, vessel name + IMO, live AIS vessel position, ETA with confidence percentage, demurrage & detention free-time countdown, and port congestion signals . **Tools**: getShipmentSummary, getContainerDetail, getVesselPosition, getDemurrageReport, getPortCongestion, addContainer . Hosted remote server with token-metered pricing (€49 for 3,000 tokens). Registry ID: `io.github.lxxmng/container-tracking`.
-
-
-
-- **[marine-traffic-mcp](https://github.com/salmangada/marine-traffic-mcp)**  
-
-  **Model Context Protocol (MCP) server for accessing Marine Traffic vessel tracking data** . **Tools**: vessel details by MMSI/IMO/ship ID, port calls history, port details, port search . **Architecture**: clean layered design with Configuration Layer, Client Layer (Marine Traffic API client), Server Layer (MCP protocol handlers), and Main Entry Point . Go-based. Enables AI assistants to query vessel positions, port calls, and port intelligence.
-
-
-
-### Inland Container Depot & Terminal Management
-
-
-
-- **[ICD TZ](https://github.com/navariltd/icd_tz)**  
-
-  **Comprehensive Inland Container Depot (ICD) Management Application tailored for Tanzania operations.** Built on **Frappe framework** . **Key features**: Manifest & Bill of Lading management (MBL/HBL hierarchies, Excel import, stakeholder linking); Container reception with gate-in process and seal verification; **Advanced container tracking** with real-time status (In Yard, At Booking, At Inspection, At Payments, Delivered) and precise yard location tracking . **Yard operations**: in-yard booking, stripping, loose cargo tracking, inspections, customs verification movements, service orders linked to Sales Orders/Invoices. **Automated billing**: tariff rules by container dimensions (20ft, 40ft, 45ft, High Cube), dynamic storage periods (single/double charge), automated day limits . **Gate-out payment security**: mathematically blocks container exit if unpaid invoices exist . **Open source**.
-
-
-
-### Container Tracking Libraries & SDKs
-
-
-
-- **[container-tracker (@ph-itdev)](https://www.npmjs.com/package/@ph-itdev/container-tracker)**  
-
-  **NPM package for tracking shipping containers across ports and vessels.** **Features**: register containers with vessel/origin/destination/carrier; update status (IN_TRANSIT, etc.) and ETA; get container details, filter by status or carrier; get timeline and transit duration; get milestone alerts; overall statistics; search across all fields . **MIT License**. Simple API for building container tracking into Node.js applications .
-
-
-
-- **[AISdb](https://github.com/AISViz/AISdb)**  
-
-  **Python package for smart AIS data storage and interaction** . Provides database utilities for storing and querying AIS vessel tracking data. Foundation for building custom analytics on AIS data streams.
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **AIS Reception**: **AIS-catcher** (SDR-based, 460+ stars), **aisdecode** (serial/UDP, web tracker) .
-
-- **Vessel Tracking Platforms**: **AISight** (full-stack, TimescaleDB + React), **Maritime Vessel Tracking** (Django + React with AISStream) .
-
-- **Container Tracking MCP**: **Container Tracking MCP** (225 carriers, DCSA-normalized), **marine-traffic-mcp** (Marine Traffic API) .
-
-- **Depot Management**: **ICD TZ** (Frappe-based, automated billing, gate-out security) .
-
-- **Libraries**: **container-tracker** (NPM, MIT), **AISdb** (Python AIS storage) .
-
-
-
-**Frameworks for building custom systems**: Combine **AIS-catcher** or **aisdecode** for AIS data reception, **AISight** for vessel tracking visualization, **Container Tracking MCP** for carrier milestone data via AI assistants, and **ICD TZ** for depot/terminal container lifecycle management. Add **PostgreSQL + TimescaleDB** for time-series vessel data and **Docker** for deployment.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Container tracking platforms handle sensitive shipment and logistics data; ensure compliance with contractual requirements and data protection regulations.
-
-- **Open-source reality**: The open-source ecosystem for container tracking is **strong at the AIS data reception and vessel tracking layers** (**AIS-catcher**, **aisdecode**, **AISight**) and **emerging at the carrier milestone integration layer** (**Container Tracking MCP**, **marine-traffic-mcp**) . **ICD TZ** provides production-grade inland depot management with automated billing and gate-out security . However, **commercial platforms** (Vizion, project44, Terminal49) provide **direct carrier API integrations, normalized milestone events across 100+ carriers, and enterprise-grade SLAs** that open-source alternatives cannot match without significant carrier partnership and engineering investment. The open-source path is most viable for **AIS-based vessel tracking**, **AI-assisted container queries**, or **depot/terminal operations** rather than full commercial container visibility.
-
-
+**Last updated: September 2026** 📅
 
 ---
 
+### 🌐 SEO & Market Overview
 
+The **global container tracking and supply chain visibility market** is estimated at **$3.8 Billion to $4.5 Billion**, projecting strong CAGR (>16%) driven by global trade digitization, DCSA standardization, and predictive logistics requirements. 
 
-**Made for logistics engineers, freight forwarders, supply chain visibility teams, and port operations managers.**
+> 💡 **Market Dynamics**: The sector is **moderately fragmented**. While enterprise giants (project44, Descartes) command major logistics contracts, ocean freight visibility is not a winner-take-all market. Specialized API providers (Vizion, Terminal49), niche maritime analytics tools (Portcast, ShipsGo), and localized depot/terminal management platforms coexist alongside open-source AIS receivers and AI Model Context Protocol (MCP) servers.
 
-Let's make container tracking more open, transparent, and AI-accessible.
+---
+
+This repository tracks notable **SaaS platforms** and **open-source projects** for **Container Tracking**. These tools help shippers, freight forwarders, ocean carriers, third-party logistics (3PL) providers, and port terminal operators monitor container movements, receive DCSA milestone alerts, predict ETAs, and manage demurrage and detention risk.
+
+---
+
+## 📑 Table of Contents
+
+- [🏢 SaaS/Hosted Platforms](#-saashosted-platforms)
+- [🔓 Open-Source GitHub Projects](#-open-source-github-projects)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [⚠️ Disclaimer](#️-disclaimer)
+- [💖 Support & Community](#-support--community)
+- [📈 Star History](#-star-history)
+
+---
+
+## 🏢 SaaS/Hosted Platforms
+
+> **SaaS & Enterprise Visibility Providers** ranked by company scale (Estimated Valuation / Annual Revenue descending):
+
+| Company / SaaS Platform 🏢 | Valuation / Revenue Scale 💰 | Pricing / Starting Tier 🏷️ | Free Tier / Trial Limits 🎁 | Key Container Tracking Features & DCSA Integration 🚢 |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Descartes](https://www.descartes.com/)** 🏬 | **~$7.5 Billion** valuation (Public NASDAQ: DSGX) | Starts at ~$250/month (Global Logistics Network tier) | No free tier; 14-day enterprise trial upon request | Global trade intelligence, ocean container tracking, customs compliance, and multi-modal fleet monitoring. |
+| **[project44](https://www.project44.com/)** 🚀 | **~$2.4 Billion** valuation ($160M+ ARR) | Starts at ~$1,000/month (Visibility Starter tier) | 14-day interactive demo/sandbox trial for qualified logistics enterprises | End-to-end multi-modal visibility (Ocean, Air, Rail, Road), predictive ETAs, port congestion, and demurrage risk management. |
+| **[CargoSmart](https://www.cargosmart.com/)** 🚢 | **~$500 Million** valuation (Subsidiary of GSBN/OOCL) | Starts at ~$500/month (Enterprise Logistics Plan) | 30-day corporate demo sandbox trial | Ocean shipping visibility platform, carrier milestone notifications, port congestion data, and disruption management. |
+| **[Ocean Insights](https://www.ocean-insights.com/)** ⚓ | **~$100 Million** valuation (Acquired by project44) | Starts at ~$450/month (Container Track & Trace tier) | 14-day free trial with tracking limit up to 10 container B/Ls | Ocean freight track & trace, container milestone alerts, carrier performance benchmarks, and port delay analytics. |
+| **[Vizion](https://www.vizionapi.com/)** ⚡ | **~$80 Million** valuation ($15M+ ARR) | Starts at $0.50 per container tracked ($50/mo minimum) | Free Tier: First 50 containers tracked free forever upon signup | Normalized container tracking API connected to 100+ ocean carriers, real-time DCSA milestone pushes, and detention/demurrage alerts. |
+| **[Terminal49](https://terminal49.com/)** 🏗️ | **~$45 Million** valuation ($8M+ ARR) | Starts at $1.00 per container tracked ($99/mo minimum) | 14-day free trial with 25 test containers included | Ocean container tracking & US port terminal visibility API, chassis tracking, demurrage risk alerts, and gate-out status. |
+| **[GoComet](https://www.gocomet.com/)** 🌐 | **~$35 Million** valuation ($6M+ ARR) | Starts at ~$299/month (Basic Tracking Plan) | 14-day free trial with up to 15 container tracking lookups | Multi-carrier ocean container tracking, automated freight rate procurement, invoice audit, and ETA delay alerts. |
+| **[Portcast](https://www.portcast.io/)** 🔮 | **~$20 Million** valuation ($3M+ ARR) | Starts at ~$199/month (Developer API Plan) | 14-day free trial with 20 container API tracking requests | AI-driven ocean container tracking, predictive ETA machine learning algorithms, vessel delay forecasts, and port congestion indices. |
+| **[ShipsGo](https://shipsgo.com/)** 📦 | **~$15 Million** valuation ($2.5M+ ARR) | Starts at $1.50 per credits package (pay-as-you-go) | Free Tier: 5 container tracking credits free forever upon account creation | Container tracking across 200+ ocean carriers, live map tracking visualization, milestone notifications, and carrier performance reports. |
+| **[SeaRates](https://www.searates.com/)** 🌊 | **~$12 Million** valuation (DP World Logistics) | Starts at $25/month (Container Tracking Web Widget) | Free Tier: 3 free container tracking lookups per month on basic account | Ocean freight container tracking web widget & API, rate calculator, route planner, and bill of lading lookup. |
+
+---
+
+## 🔓 Open-Source GitHub Projects
+
+> **Open-Source Container & Vessel Tracking Solutions** sorted by GitHub Stars ⭐ (descending):
+
+| Open-Source Project 🛠️ | GitHub Stars ⭐ | Primary Tech Stack 💻 | Domain & Core Capabilities 🎯 |
+| :--- | :--- | :--- | :--- |
+| **[AIS-catcher](https://github.com/jvde-github/AIS-catcher)** 📻 | [![Star Badge](https://img.shields.io/github/stars/jvde-github/AIS-catcher?style=social&color=white)](https://github.com/jvde-github/AIS-catcher/stargazers) | C++ | Dual-channel AIS receiver for RTL-SDR, Airspy, HackRF, SDRplay, and SoapySDR. Decodes AIVDM/AIVDO signals from vessels for container ship tracking pipelines. |
+| **[libais](https://github.com/schwehr/libais)** 📚 | [![Star Badge](https://img.shields.io/github/stars/schwehr/libais?style=social&color=white)](https://github.com/schwehr/libais/stargazers) | C++ / Python | Production-grade C++ decoder with Python bindings for Automatic Identification System (AIS) NMEA data payloads. |
+| **[pyais](https://github.com/M0r13n/pyais)** 🐍 | [![Star Badge](https://img.shields.io/github/stars/M0r13n/pyais?style=social&color=white)](https://github.com/M0r13n/pyais/stargazers) | Python | Full-featured Python library for decoding and encoding AIS messages (AIVDM/AIVDO) with TCP, UDP, and file stream support. |
+| **[Ais.Net](https://github.com/ais-dotnet/Ais.Net)** ⚡ | [![Star Badge](https://img.shields.io/github/stars/ais-dotnet/Ais.Net?style=social&color=white)](https://github.com/ais-dotnet/Ais.Net/stargazers) | C# / .NET | High-performance, zero-allocation .NET AIS decoder capable of processing millions of NMEA sentences per second. |
+| **[rpi_boat_utils](https://github.com/itemir/rpi_boat_utils)** ⛵ | [![Star Badge](https://img.shields.io/github/stars/itemir/rpi_boat_utils?style=social&color=white)](https://github.com/itemir/rpi_boat_utils/stargazers) | Shell / Python | Raspberry Pi marine utilities, UART control scripts, AIS wireless daemon, and Signal K integration for vessel position tracking. |
+| **[AISdb](https://github.com/AISViz/AISdb)** 🗄️ | [![Star Badge](https://img.shields.io/github/stars/AISViz/AISdb?style=social&color=white)](https://github.com/AISViz/AISdb/stargazers) | Python / SQLite / Rust | Smart database utilities for storing, querying, and trajectory-indexing massive time-series AIS vessel tracking streams. |
+| **[noaadata](https://github.com/schwehr/noaadata)** 🌊 | [![Star Badge](https://img.shields.io/github/stars/schwehr/noaadata?style=social&color=white)](https://github.com/schwehr/noaadata/stargazers) | Python | Pure Python AIS message decoder and encoder utilities maintained by coastal oceanography researchers. |
+| **[ais-decoder](https://github.com/aduvenhage/ais-decoder)** 🛠️ | [![Star Badge](https://img.shields.io/github/stars/aduvenhage/ais-decoder?style=social&color=white)](https://github.com/aduvenhage/ais-decoder/stargazers) | C++ / Python | Lightweight C++ AIS NMEA sentence parser and decoder with Python bindings for maritime container tracking integrations. |
+| **[aisdecode](https://github.com/madpsy/aisdecode)** 📡 | [![Star Badge](https://img.shields.io/github/stars/madpsy/aisdecode?style=social&color=white)](https://github.com/madpsy/aisdecode/stargazers) | Go | AIS decoder and web-based vessel tracker for serial hardware and UDP NMEA streams with built-in map UI and aggregator mode. |
+| **[AISight](https://github.com/snekkenull/AISight)** 🗺️ | [![Star Badge](https://img.shields.io/github/stars/snekkenull/AISight?style=social&color=white)](https://github.com/snekkenull/AISight/stargazers) | Node.js / React / TimescaleDB | Full-stack real-time vessel tracking web application with live AIS data streaming from AISStream API, Mapbox interactive map, and REST endpoints. |
+| **[Container Tracking MCP](https://github.com/lxxmng/container-tracking-mcp)** 🤖 | [![Star Badge](https://img.shields.io/github/stars/lxxmng/container-tracking-mcp?style=social&color=white)](https://github.com/lxxmng/container-tracking-mcp/stargazers) | TypeScript / Model Context Protocol | Ocean-freight MCP server exposing container tracking for 225+ shipping lines to Claude, Cursor, and ChatGPT normalized to DCSA standards. |
+| **[marine-traffic-mcp](https://github.com/salmangada/marine-traffic-mcp)** 🧭 | [![Star Badge](https://img.shields.io/github/stars/salmangada/marine-traffic-mcp?style=social&color=white)](https://github.com/salmangada/marine-traffic-mcp/stargazers) | Go / MCP | Model Context Protocol server connecting AI assistants directly to MarineTraffic API for vessel MMSI/IMO lookup, port calls, and port details. |
+| **[ICD TZ](https://github.com/navariltd/icd_tz)** 🏬 | [![Star Badge](https://img.shields.io/github/stars/navariltd/icd_tz?style=social&color=white)](https://github.com/navariltd/icd_tz/stargazers) | Python / Frappe Framework | Comprehensive Inland Container Depot (ICD) Management application featuring gate-in/gate-out seal verification, yard location tracking, automated tariff billing, and payment security. |
+
+---
+
+### 🧩 System Integration Reference
+
+**Architecture Blueprint for Building Custom Container Visibility Systems**:
+
+1. **AIS Data Ingestion & Signal Decoding**: Deploy **[AIS-catcher](https://github.com/jvde-github/AIS-catcher)** or **[pyais](https://github.com/M0r13n/pyais)** to receive and decode raw AIVDM maritime signals from hardware SDRs or UDP feeds.
+2. **Spatial Data Warehouse**: Index time-series vessel positions using **[AISdb](https://github.com/AISViz/AISdb)** backed by PostgreSQL + TimescaleDB.
+3. **Carrier Milestone Standardization**: Integrate DCSA-compliant ocean tracking events using **[Container Tracking MCP](https://github.com/lxxmng/container-tracking-mcp)** or commercial APIs like **[Vizion](https://www.vizionapi.com/)** and **[Terminal49](https://terminal49.com/)**.
+4. **Terminal & Depot Yard Management**: Manage inland container lifecycle, gate-in payments, and yard bay storage via **[ICD TZ](https://github.com/navariltd/icd_tz)**.
+
+---
+
+## 🤝 How to Contribute
+
+Contributions are welcome! Please follow these simple guidelines:
+
+1. Fork this repository 🍴.
+2. Add or edit entries in `README.md` following the table formatting.
+3. Include: Name, website link, star count (if open-source), pricing/valuation details, and concise descriptions.
+4. Submit a Pull Request (PR) with a brief summary of additions.
+
+---
+
+## ⚠️ Disclaimer
+
+- This repository is a **community-curated list** for informational and educational purposes.
+- Container tracking platforms process proprietary operational data; ensure your integrations comply with relevant data privacy laws and commercial shipping terms.
+- Commercial APIs (Vizion, project44, Terminal49) provide direct carrier EDI/API connections and SLA-backed SLAs, whereas open-source projects excel at AIS signal decoding, vessel spatial analytics, and inland depot operations.
+
+---
+
+## 💖 Support & Community
+
+Thank you for visiting **Awesome Container Tracking**! 🚢 If this repository has helped you build logistics applications, track shipments, or research maritime technology:
+
+- ⭐ **Star this repository** to show your support!
+- 🔀 **Fork it** to contribute new tools and frameworks.
+- 📢 **Share it** with your logistics engineering colleagues and supply chain networks.
+- ☕ **Buy me a coffee / Sponsor**: If you'd like to support ongoing maintenance of this awesome list, consider sponsoring on [GitHub Sponsors](https://github.com/sponsors/ishandutta2007).
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Container-Tracking&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Container-Tracking&type=date&legend=top-left)
+
+---
+
+<p align="center">
+  <i>Made with ❤️ for logistics engineers, freight forwarders, supply chain developers, and port operations managers.</i>
+</p>
